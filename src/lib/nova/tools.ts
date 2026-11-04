@@ -39,7 +39,7 @@ export const tools: Tool[] = [
   {
     name: "Brand Voice Engine",
     description:
-      "Save how your brand talks once, and everything NOVA writes for you will match it.",
+      "Save how your brand talks once, and everything Trendōva AI writes for you will match it.",
     icon: Sparkles,
     status: "available",
     to: "/app/voice",

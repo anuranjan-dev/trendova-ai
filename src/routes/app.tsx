@@ -37,7 +37,7 @@ function AppLayout() {
                 <Menu className="size-5" />
               </SheetTrigger>
               <SheetContent side="left" className="w-[16.5rem] border-sidebar-border p-0">
-                <SheetTitle className="sr-only">NOVA navigation</SheetTitle>
+                <SheetTitle className="sr-only">Trendova AI navigation</SheetTitle>
                 <AppSidebar onNavigate={() => setOpen(false)} />
               </SheetContent>
             </Sheet>

@@ -16,7 +16,7 @@ export function AuthShell({
 }) {
   return (
     <div className="hero-glow flex min-h-screen flex-col items-center justify-center px-4 py-14">
-      <Link to="/" aria-label="NOVA home">
+      <Link to="/" aria-label="Trendova AI home">
         <NovaLogo />
       </Link>
 

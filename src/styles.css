@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * NOVA design system.
+ * Trendova AI design system.
  * Dark-first, near-black surfaces, single electric violet accent.
  * All colors are oklch tokens; never hardcode colors in components.
  */
@@ -544,7 +544,7 @@
   animation: nova-icon-shimmer 2.8s ease-in-out infinite;
 }
 
-/* Supplied NOVA screen: isolated light presentation palette. */
+/* Supplied Trendova AI screen: isolated light presentation palette. */
 .reference-home {
   color-scheme: light;
   --background: #f8faff;
@@ -619,7 +619,7 @@
   .reference-home *, .reference-home *::before, .reference-home *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* NOVA load animations: bars, graph lines, dots */
+/* Trendova AI load animations: bars, graph lines, dots */
 @keyframes nova-bar-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @keyframes nova-bar-shine { from { background-position: -150% 0; } to { background-position: 250% 0; } }
 @keyframes nova-line-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
@@ -636,7 +636,7 @@
 @media (prefers-reduced-motion: reduce) { .nova-bar, .nova-bar::after, .nova-line, .nova-dot, .nova-gradient-text { animation: none; } }
 
 /* ---------------------------------------------------------------
-   NOVA workspace palette (signed-in app only).
+   Trendova AI workspace palette (signed-in app only).
    Scoped to html.nova-ws (set by the /app layout) and .nova-ws so the
    public pages keep their own colours. Popovers portal to <body>, which is
    why the html-level class is needed as well.
@@ -708,3 +708,87 @@ html.nova-ws.dark,
   --success: oklch(0.72 0.14 160);
   --warning: oklch(0.8 0.14 75);
 }
+
+/* Auth pages only: blue/navy palette scoped so other pages are unaffected */
+.nova-auth {
+  color-scheme: light;
+  --background: #f7f9ff;
+  --foreground: #101b3a;
+  --card: #ffffff;
+  --card-foreground: #101b3a;
+  --popover: #ffffff;
+  --popover-foreground: #101b3a;
+  --muted: #eef2fb;
+  --muted-foreground: #5b6889;
+  --primary: #2864f0;
+  --primary-foreground: #ffffff;
+  --accent: #e6eeff;
+  --accent-foreground: #101b3a;
+  --border: #dfe5f2;
+  --input: #d5ddee;
+  --ring: #2864f0;
+  --navy: #101b3a;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Trendōva dark homepage ("Obsidian Atelier") — scoped greyscale tones */
+@theme inline {
+  --color-tone-fg: var(--tone-fg);
+  --color-tone-bg: var(--tone-bg);
+  --color-tone-deep: var(--tone-deep);
+  --color-tone-100: var(--tone-100);
+  --color-tone-200: var(--tone-200);
+  --color-tone-300: var(--tone-300);
+  --color-tone-400: var(--tone-400);
+  --color-tone-500: var(--tone-500);
+  --color-tone-600: var(--tone-600);
+  --color-tone-700: var(--tone-700);
+  --color-tone-800: var(--tone-800);
+  --color-tone-900: var(--tone-900);
+  --color-tone-950: var(--tone-950);
+}
+.trendova-home {
+  --tone-fg: #ffffff;
+  --tone-bg: #000000;
+  --tone-deep: #0a0a0a;
+  --tone-100: #f4f4f5;
+  --tone-200: #e4e4e7;
+  --tone-300: #d4d4d8;
+  --tone-400: #a1a1aa;
+  --tone-500: #71717a;
+  --tone-600: #52525b;
+  --tone-700: #3f3f46;
+  --tone-800: #27272a;
+  --tone-900: #18181b;
+  --tone-950: #09090b;
+  font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+  color-scheme: dark;
+}
+.trendova-home .font-mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+.trendova-home .material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-variation-settings: "FILL" 0, "wght" 450, "GRAD" 0, "opsz" 24;
+  display: inline-block; vertical-align: middle; line-height: 1; font-weight: normal; font-style: normal;
+  letter-spacing: normal; text-transform: none; white-space: nowrap; direction: ltr; -webkit-font-feature-settings: "liga";
+}
+.trendova-home .custom-scrollbar::-webkit-scrollbar { height: 4px; width: 4px; }
+.trendova-home .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--tone-800); border-radius: 9999px; }
+.trendova-home .grid-bg {
+  background-image: radial-gradient(color-mix(in oklab, var(--tone-fg) 7%, transparent) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.trendova-home .shimmer-card { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+.trendova-home .shimmer-card:hover {
+  border-color: color-mix(in oklab, var(--tone-fg) 28%, transparent);
+  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.8), 0 0 20px 0 color-mix(in oklab, var(--tone-fg) 4%, transparent);
+  transform: translateY(-2px);
+}
+.trendova-home section, .trendova-home #workspace { scroll-margin-top: 96px; }
+.trendova-home .workspace-panel { animation: trendova-rise 250ms ease-out; }
+.trendova-home.is-scanning #workspace { box-shadow: 0 0 0 2px var(--tone-fg); }
+@keyframes trendova-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .trendova-home .workspace-panel, .trendova-home .shimmer-card { animation: none; transition: none; }
+}
+.trendova-home .tab-btn { flex-shrink: 0; white-space: nowrap; }

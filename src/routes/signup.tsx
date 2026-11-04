@@ -11,15 +11,15 @@ export const Route = createFileRoute("/signup")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Request access — NOVA" },
+      { title: "Request access — Trendova AI" },
       {
         name: "description",
-        content: "Set up your brand workspace in NOVA — trend intelligence and on-brand social content for youth brands.",
+        content: "Set up your brand workspace in Trendova AI — trend intelligence and on-brand social content for youth brands.",
       },
-      { property: "og:title", content: "Request access — NOVA" },
+      { property: "og:title", content: "Request access — Trendova AI" },
       {
         property: "og:description",
-        content: "Set up your brand workspace in NOVA — trend intelligence for youth-brand marketing teams.",
+        content: "Set up your brand workspace in Trendova AI — trend intelligence for youth-brand marketing teams.",
       },
     ],
   }),

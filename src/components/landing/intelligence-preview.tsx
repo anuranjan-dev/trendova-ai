@@ -15,7 +15,7 @@ export function IntelligencePreview() {
   return (
     <div className="nova-product-preview text-left text-foreground">
       <aside className="hidden w-44 shrink-0 border-r border-border bg-muted/50 p-5 md:block">
-        <p className="text-lg font-semibold">NOVA<span className="text-primary">.</span></p>
+        <p className="text-lg font-semibold">Trendōva AI<span className="text-primary">.</span></p>
         <p className="mb-5 mt-1 text-[10px] text-muted-foreground">Marketing workspace</p>
         {[{ icon: LayoutGrid, name: "Overview" }, { icon: Radar, name: "Trend Scanner" }, { icon: Wand2, name: "Content Studio" }, { icon: Sparkles, name: "Brand Voice" }, { icon: BarChart3, name: "Insights" }].map(({ icon: Icon, name }) => <div key={name} className={cn("mb-1 flex items-center gap-2 rounded-md px-2 py-2.5 text-[11px]", name === "Trend Scanner" ? "bg-primary-soft text-primary" : "text-muted-foreground")}><Icon className="size-3.5" />{name}</div>)}
         <p className="mt-12 text-[10px] text-muted-foreground">Illustrative workspace</p>

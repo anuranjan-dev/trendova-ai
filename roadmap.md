@@ -13,3 +13,6 @@
 # Publish to GitHub
 - [x] Push every project file to the get-nova-ai repository, keeping its own README brief and Supabase client files intact.
 - [x] Push the workspace redesign.
+
+# Dark Trendōva homepage
+- [x] Rebuild the homepage from the supplied dark design, keeping feature cards free of tick lists.

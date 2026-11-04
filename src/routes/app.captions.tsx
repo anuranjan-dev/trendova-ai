@@ -16,9 +16,9 @@ import { takeCaptionDraft, useWorkspace } from "@/lib/nova/workspace-store";
 export const Route = createFileRoute("/app/captions")({
   head: () => ({
     meta: [
-      { title: "AI Caption Generator — NOVA" },
+      { title: "AI Caption Generator — Trendova AI" },
       { name: "description", content: "Turn your idea into a caption that fits your platform and brand voice." },
-      { property: "og:title", content: "AI Caption Generator — NOVA" },
+      { property: "og:title", content: "AI Caption Generator — Trendova AI" },
       { property: "og:description", content: "Turn your idea into a caption that fits your platform and brand voice." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -84,7 +84,7 @@ function CaptionGenerator() {
 
       <div className="mb-6 rounded-[1.125rem] border border-border bg-surface p-4 text-sm">
         <p className="font-medium">AI generation isn't connected yet.</p>
-        <p className="mt-1 text-muted-foreground">For now, NOVA builds a template draft from your own words, platform and tone. Connecting an AI model is the next step for real generated captions.</p>
+        <p className="mt-1 text-muted-foreground">For now, Trendōva AI builds a template draft from your own words, platform and tone. Connecting an AI model is the next step for real generated captions.</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">

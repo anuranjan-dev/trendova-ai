@@ -9,10 +9,10 @@ import { useWorkspace } from "@/lib/nova/workspace-store";
 export const Route = createFileRoute("/app/")({
   head: () => ({
     meta: [
-      { title: "Overview — NOVA" },
-      { name: "description", content: "Your NOVA workspace: scan trends, write captions, plan content and set up your brand voice." },
-      { property: "og:title", content: "Overview — NOVA" },
-      { property: "og:description", content: "Decide what to do next in your NOVA workspace." },
+      { title: "Overview — Trendova AI" },
+      { name: "description", content: "Your Trendova AI workspace: scan trends, write captions, plan content and set up your brand voice." },
+      { property: "og:title", content: "Overview — Trendova AI" },
+      { property: "og:description", content: "Decide what to do next in your Trendova AI workspace." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -35,7 +35,7 @@ function Overview() {
 
   return (
     <PageShell>
-      <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">{first ? `Welcome back, ${first}` : "Welcome to NOVA"}</h1>
+      <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">{first ? `Welcome back, ${first}` : "Welcome to Trendōva AI"}</h1>
       <p className="mt-2 text-muted-foreground">What would you like to work on today?</p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -85,7 +85,7 @@ function Overview() {
               })}
             </ul>
           ) : (
-            <p className="text-sm text-muted-foreground">Your recent activity will appear here as you use NOVA.</p>
+            <p className="text-sm text-muted-foreground">Your recent activity will appear here as you use Trendōva AI.</p>
           )}
         </Panel>
       </div>

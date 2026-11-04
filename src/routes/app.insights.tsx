@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/app/insights")({
   head: () => ({
     meta: [
-      { title: "Insights (Coming Soon) — NOVA" },
+      { title: "Insights (Coming Soon) — Trendova AI" },
       { name: "description", content: "Insights is in development: content performance, best formats and engagement patterns from your real data." },
-      { property: "og:title", content: "Insights (Coming Soon) — NOVA" },
+      { property: "og:title", content: "Insights (Coming Soon) — Trendova AI" },
       { property: "og:description", content: "Insights is in development." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

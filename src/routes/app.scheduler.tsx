@@ -18,9 +18,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/app/scheduler")({
   head: () => ({
     meta: [
-      { title: "Scheduler & Analyzer — NOVA" },
+      { title: "Scheduler & Analyzer — Trendova AI" },
       { name: "description", content: "Plan your content, see general posting guidance, and review performance once data is connected." },
-      { property: "og:title", content: "Scheduler & Analyzer — NOVA" },
+      { property: "og:title", content: "Scheduler & Analyzer — Trendova AI" },
       { property: "og:description", content: "Plan content and review performance when data is connected." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -71,7 +71,7 @@ function Scheduler() {
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div>
               <h2 className="text-lg font-semibold">Content planner</h2>
-              <p className="text-sm text-muted-foreground">Saved in this browser. Posts are reminders for you — NOVA does not publish them.</p>
+              <p className="text-sm text-muted-foreground">Saved in this browser. Posts are reminders for you — Trendōva AI does not publish them.</p>
             </div>
             <div className="flex rounded-full border border-border p-1" role="group" aria-label="Planner view">
               {(["week", "list"] as const).map((v) => (

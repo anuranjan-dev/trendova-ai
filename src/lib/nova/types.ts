@@ -1,4 +1,4 @@
-/** Domain types for NOVA — AI marketing intelligence for youth brands. */
+/** Domain types for Trendova AI — AI marketing intelligence for youth brands. */
 
 export interface BrandProfile {
   brandName: string;

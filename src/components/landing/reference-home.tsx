@@ -33,9 +33,9 @@ export function ReferenceHomepage() {
 <header className="sticky top-0 z-50 pt-4 px-4 sm:px-6">
 <div className="max-w-7xl mx-auto backdrop-blur-xl bg-card/85 border border-border/80 rounded-full shadow-sm px-5 sm:px-7 h-16 flex items-center justify-between transition-all duration-300">
 <a className="flex items-center gap-2.5 group active:scale-95 transition-transform" href="/">
-<div className="w-9 h-9 aspect-square shrink-0 rounded-full bg-primary flex items-center justify-center text-primary-foreground shadow-md group-hover:bg-primary transition-colors"><span className="font-sans tabular-nums text-lg font-extrabold leading-none select-none translate-y-px">{"N"}</span>
+<div className="w-9 h-9 aspect-square shrink-0 rounded-full overflow-hidden border border-foreground/15 bg-black shadow-md transition-colors"><img src="/trendova-logo.png" alt="" className="size-full object-cover" />
 </div>
-<span className="text-xl font-bold text-foreground">{"NOVA"}</span>
+<span className="text-xl font-bold text-foreground">{"Trendōva AI"}</span>
 </a>
 <nav className="hidden md:flex items-center gap-1 bg-muted/70 p-1 rounded-full border border-border/60">
 <a className="text-muted-foreground hover:text-primary font-medium text-xs sm:text-[13px] px-4 py-1.5 rounded-full hover:bg-card transition-all duration-150" href="#features">{"Features"}</a>
@@ -92,7 +92,7 @@ export function ReferenceHomepage() {
 </div>
 <div >
 <div className="flex items-center gap-2">
-<span className="font-bold text-sm text-foreground font-sans tabular-nums">{"NOVA WORKSPACE"}</span>
+<span className="font-bold text-sm text-foreground font-sans tabular-nums">{"TRENDŌVA AI WORKSPACE"}</span>
 <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full bg-primary-soft text-primary border border-primary/20">{"Sample Preview"}</span>
 </div>
 <p className="text-xs text-muted-foreground">{"Your brand's marketing, in one place."}</p>
@@ -106,7 +106,7 @@ export function ReferenceHomepage() {
 <Button className="bg-primary hover:bg-primary text-primary-foreground font-medium text-[11px] px-3 py-1 rounded-full transition-colors flex items-center gap-1 shadow-xs ml-1" onClick={scanTrends} variant="ghost"><RefreshCw className={scanning ? "animate-spin" : ""} /> {scanning ? "Scanning…" : "Scan Trends"}</Button>
 </div>
 </div>
-<div role="tablist" aria-label="NOVA workspace tools" className="flex items-center gap-2 py-4 border-b border-muted overflow-x-auto custom-scrollbar">
+<div role="tablist" aria-label="Trendova AI workspace tools" className="flex items-center gap-2 py-4 border-b border-muted overflow-x-auto custom-scrollbar">
 <Button role="tab" aria-selected={tab === "trend"} aria-controls="tab-panel-trend" className={"tab-btn rounded-full px-4 py-2 text-xs sm:text-[13px]" + (tab === "trend" ? " bg-primary text-primary-foreground" : " bg-muted text-muted-foreground")} id="tab-btn-trend" onClick={() => setTab("trend")} variant="ghost">
 <Radar className="size-5 shrink-0 text-[16px]" aria-hidden="true" />
 <span >{"Trend Scanner"}</span>
@@ -444,7 +444,7 @@ export function ReferenceHomepage() {
 </section>
 <section id="features" className="py-20 md:py-28 bg-card border-y border-border/70">
 <div className="max-w-7xl mx-auto px-6">
-<div className="text-center max-w-3xl mx-auto mb-14"><h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Explore NOVA’s Features</h2><p className="text-base sm:text-lg text-muted-foreground leading-relaxed">From discovering trends to creating, scheduling, and personalizing content, NOVA brings your essential AI marketing tools together in one workspace.</p></div>
+<div className="text-center max-w-3xl mx-auto mb-14"><h2 className="text-3xl sm:text-4xl font-extrabold mb-4">Explore Trendōva AI’s Features</h2><p className="text-base sm:text-lg text-muted-foreground leading-relaxed">From discovering trends to creating, scheduling, and personalizing content, Trendōva AI brings your essential AI marketing tools together in one workspace.</p></div>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 {[
  {icon: Radar, title: "Trend Scanner", description: "Discover emerging topics, content patterns, and conversations that could create opportunities for your brand."},
@@ -469,7 +469,7 @@ export function ReferenceHomepage() {
 </div>
 </div>
 <h3 className="text-lg font-bold text-foreground mb-2">{"Discover Trends"}</h3>
-<p className="text-xs text-muted-foreground leading-relaxed mb-6">{"\n              NOVA helps you explore emerging trends and conversations across social platforms, then identify the ideas most relevant to your brand.\n            "}</p>
+<p className="text-xs text-muted-foreground leading-relaxed mb-6">{"\n              Trendōva AI helps you explore emerging trends and conversations across social platforms, then identify the ideas most relevant to your brand.\n            "}</p>
 </div>
 <div className="pt-4 border-t border-muted">
 <div className="flex flex-wrap gap-1.5 mb-2">
@@ -658,9 +658,9 @@ export function ReferenceHomepage() {
 <section className="py-20 md:py-28 bg-background" id="about">
 <div className="max-w-7xl mx-auto px-6">
 <div className="max-w-4xl mx-auto">
-<span className="text-xs font-semibold text-primary uppercase font-sans tabular-nums block mb-3">{"About NOVA"}</span>
+<span className="text-xs font-semibold text-primary uppercase font-sans tabular-nums block mb-3">{"About Trendōva AI"}</span>
 <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-6">{"\n          Marketing Should Feel More Human.\n        "}</h2>
-<p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-12">{"\n          NOVA is designed to simplify the work behind effective marketing. By bringing trend discovery, content creation, scheduling, performance analysis, and brand personalization into one connected workspace, NOVA helps brands spend less time juggling tools and more time developing ideas that connect with their audience.\n        "}</p>
+<p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-12">{"\n          Trendōva AI is designed to simplify the work behind effective marketing. By bringing trend discovery, content creation, scheduling, performance analysis, and brand personalization into one connected workspace, Trendōva AI helps brands spend less time juggling tools and more time developing ideas that connect with their audience.\n        "}</p>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div className="p-6 rounded-lg bg-card border border-border/80 shadow-xs">
 <div className="w-10 h-10 rounded-lg bg-primary-soft text-primary flex items-center justify-center mb-4">
@@ -696,31 +696,31 @@ export function ReferenceHomepage() {
 <div className="space-y-4">
 <div className="faq-item rounded-lg border border-border/90 bg-background overflow-hidden transition-all duration-200">
 <Button className="h-auto whitespace-normal w-full p-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-foreground focus:outline-none" onClick={() => setFaq(faq === 0 ? null : 0)} aria-expanded={faq === 0} variant="ghost">
-<span >{"Who is NOVA built for?"}</span>
+<span >{"Who is Trendōva AI built for?"}</span>
 <ChevronDown className="size-5 shrink-0 text-muted-foreground/70 transform transition-transform duration-200 icon-arrow" aria-hidden="true" />
 </Button>
-<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 0 ? "" : " hidden")}>{"\n            NOVA is designed for growing brands, streetwear labels, youth-focused businesses, creators, and marketing teams that want to discover relevant trends and create content that connects with their audience.\n          "}</div>
+<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 0 ? "" : " hidden")}>{"\n            Trendōva AI is designed for growing brands, streetwear labels, youth-focused businesses, creators, and marketing teams that want to discover relevant trends and create content that connects with their audience.\n          "}</div>
 </div>
 <div className="faq-item rounded-lg border border-border/90 bg-background overflow-hidden transition-all duration-200">
 <Button className="h-auto whitespace-normal w-full p-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-foreground focus:outline-none" onClick={() => setFaq(faq === 1 ? null : 1)} aria-expanded={faq === 1} variant="ghost">
 <span >{"Are these live social media trends?"}</span>
 <ChevronDown className="size-5 shrink-0 text-muted-foreground/70 transform transition-transform duration-200 icon-arrow" aria-hidden="true" />
 </Button>
-<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 1 ? "" : " hidden")}>{"\n            Trend results depend on the data sources available to NOVA. Examples shown in the demo may use sample data and should not be interpreted as live platform analytics. Where live trend data is available, NOVA can help you explore relevant topics and content opportunities.\n          "}</div>
+<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 1 ? "" : " hidden")}>{"\n            Trend results depend on the data sources available to Trendōva AI. Examples shown in the demo may use sample data and should not be interpreted as live platform analytics. Where live trend data is available, Trendōva AI can help you explore relevant topics and content opportunities.\n          "}</div>
 </div>
 <div className="faq-item rounded-lg border border-border/90 bg-background overflow-hidden transition-all duration-200">
 <Button className="h-auto whitespace-normal w-full p-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-foreground focus:outline-none" onClick={() => setFaq(faq === 2 ? null : 2)} aria-expanded={faq === 2} variant="ghost">
-<span >{"Can I explore NOVA without adding a brand?"}</span>
+<span >{"Can I explore Trendōva AI without adding a brand?"}</span>
 <ChevronDown className="size-5 shrink-0 text-muted-foreground/70 transform transition-transform duration-200 icon-arrow" aria-hidden="true" />
 </Button>
 <div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 2 ? "" : " hidden")}>{"\n            Yes, the demo should let you explore the main features using a sample brand such as Aura Wear. You can understand the workflow before setting up your own brand profile.\n          "}</div>
 </div>
 <div className="faq-item rounded-lg border border-border/90 bg-background overflow-hidden transition-all duration-200">
 <Button className="h-auto whitespace-normal w-full p-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-foreground focus:outline-none" onClick={() => setFaq(faq === 3 ? null : 3)} aria-expanded={faq === 3} variant="ghost">
-<span >{"Does NOVA guarantee results?"}</span>
+<span >{"Does Trendōva AI guarantee results?"}</span>
 <ChevronDown className="size-5 shrink-0 text-muted-foreground/70 transform transition-transform duration-200 icon-arrow" aria-hidden="true" />
 </Button>
-<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 3 ? "" : " hidden")}>{"\n            No tool can guarantee sales, reach, or engagement. NOVA is designed to help you discover opportunities, create more relevant content, plan your posts, and learn from available performance insights. Actual results depend on your audience, content, product, and other factors.\n          "}</div>
+<div className={"faq-content px-6 pb-6 text-xs sm:text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4" + (faq === 3 ? "" : " hidden")}>{"\n            No tool can guarantee sales, reach, or engagement. Trendōva AI is designed to help you discover opportunities, create more relevant content, plan your posts, and learn from available performance insights. Actual results depend on your audience, content, product, and other factors.\n          "}</div>
 </div>
 <div className="faq-item rounded-lg border border-border/90 bg-background overflow-hidden transition-all duration-200">
 <Button className="h-auto whitespace-normal w-full p-6 text-left flex items-center justify-between gap-4 font-semibold text-sm sm:text-base text-foreground focus:outline-none" onClick={() => setFaq(faq === 4 ? null : 4)} aria-expanded={faq === 4} variant="ghost">
@@ -742,7 +742,7 @@ export function ReferenceHomepage() {
 <section className="py-20 md:py-28 relative overflow-hidden bg-gradient-to-br from-foreground via-foreground to-primary text-primary-foreground">
 <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
 <h2 className="text-3xl sm:text-5xl font-extrabold mb-6">{"\n        Your Next Great Campaign Starts Here.\n      "}</h2>
-<p className="text-base sm:text-lg text-muted-foreground/50 max-w-2xl mx-auto mb-10 leading-relaxed">{"\n        Discover trends, create better content, and build a more consistent brand experience with NOVA.\n      "}</p>
+<p className="text-base sm:text-lg text-muted-foreground/50 max-w-2xl mx-auto mb-10 leading-relaxed">{"\n        Discover trends, create better content, and build a more consistent brand experience with Trendōva AI.\n      "}</p>
 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
 <Button asChild variant="ghost" className="h-auto p-0"><a className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-primary hover:bg-primary text-primary-foreground font-medium text-sm shadow-reference transition-all duration-200 active:scale-95" href="#workspace">
 <span >{"Explore Demo"}</span>
@@ -759,9 +759,9 @@ export function ReferenceHomepage() {
 <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
 <div className="flex flex-col items-center md:items-start gap-2">
 <div className="flex items-center gap-2.5">
-<div className="w-7 h-7 aspect-square shrink-0 rounded-full bg-primary flex items-center justify-center text-primary-foreground"><span className="font-sans tabular-nums text-sm font-extrabold leading-none select-none translate-y-px">{"N"}</span>
+<div className="w-7 h-7 aspect-square shrink-0 rounded-full overflow-hidden border border-foreground/15 bg-black"><img src="/trendova-logo.png" alt="" className="size-full object-cover" />
 </div>
-<span className="text-lg font-bold text-foreground">{"NOVA"}</span>
+<span className="text-lg font-bold text-foreground">{"Trendōva AI"}</span>
 </div>
 <p className="text-xs text-muted-foreground text-center md:text-left max-w-sm">{"\n          AI marketing intelligence for brands that want to connect with their audience.\n        "}</p>
 </div>
@@ -773,7 +773,7 @@ export function ReferenceHomepage() {
 <a className="hover:text-primary transition-colors" href="/login">{"Log In"}</a>
 <a className="hover:text-primary transition-colors" href="#workspace">{"Explore Demo"}</a>
 </div>
-<div className="text-xs text-muted-foreground/70">{"\n        \u00a9 2026 NOVA Intelligence Inc. All rights reserved.\n      "}</div>
+<div className="text-xs text-muted-foreground/70">{"\n        \u00a9 2026 Trendova AI. All rights reserved.\n      "}</div>
 </div>
 </footer>
 </div>;

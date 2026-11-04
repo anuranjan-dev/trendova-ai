@@ -36,7 +36,7 @@ export function AppSidebar({ onNavigate }: { onNavigate?: () => void }) {
   return (
     <div className="flex h-full flex-col bg-sidebar text-sidebar-foreground">
       <div className="px-5 py-5">
-        <Link to="/app" onClick={onNavigate} aria-label="NOVA overview">
+        <Link to="/app" onClick={onNavigate} aria-label="Trendova AI overview">
           <NovaLogo />
         </Link>
       </div>

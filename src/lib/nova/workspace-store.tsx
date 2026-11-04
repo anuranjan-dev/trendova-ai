@@ -3,7 +3,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import type { ActivityItem, ActivityKind, BrandProfile, PlannedPost, UserProfile } from "./types";
 
 /**
- * Workspace state for the signed-in NOVA app.
+ * Workspace state for the signed-in Trendova AI app.
  * There is no backend yet, so everything persists in this browser's localStorage.
  */
 const PROFILE_KEY = "nova.brand-profile.v1";

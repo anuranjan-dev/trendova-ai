@@ -16,9 +16,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/app/trends")({
   head: () => ({
     meta: [
-      { title: "Trend Scanner — NOVA" },
+      { title: "Trend Scanner — Trendova AI" },
       { name: "description", content: "Discover topics worth exploring and turn them into content ideas for your brand." },
-      { property: "og:title", content: "Trend Scanner — NOVA" },
+      { property: "og:title", content: "Trend Scanner — Trendova AI" },
       { property: "og:description", content: "Discover topics worth exploring and turn them into content ideas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

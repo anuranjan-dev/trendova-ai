@@ -10,16 +10,16 @@ export const Route = createFileRoute("/app/tools")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Marketing Modules — NOVA" },
+      { title: "Marketing Modules — Trendova AI" },
       {
         name: "description",
         content:
           "Trend scanning, content generation, brand voice and performance insights — with hashtag intelligence, listening and creator matching coming next.",
       },
-      { property: "og:title", content: "Marketing Modules — NOVA" },
+      { property: "og:title", content: "Marketing Modules — Trendova AI" },
       {
         property: "og:description",
-        content: "Every NOVA marketing module in one place, from trend intelligence to content strategy.",
+        content: "Every Trendova AI marketing module in one place, from trend intelligence to content strategy.",
       },
     ],
   }),
@@ -36,7 +36,7 @@ function ToolsPage() {
       <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-8 sm:py-14">
         <h1 className="text-2xl font-semibold sm:text-3xl">Explore</h1>
         <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-          Everything NOVA can do for your brand, in plain English. Click any card below to open it.
+          Everything Trendōva AI can do for your brand, in plain English. Click any card below to open it.
         </p>
 
         <section className="mt-10">

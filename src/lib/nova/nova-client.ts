@@ -2,7 +2,7 @@ import { buildTrendReport } from "./trend-data";
 import type { BrandProfile, ContentBrief, ContentResult, NovaClient, TrendReport } from "./types";
 
 /**
- * Demo implementation of the NovaClient contract.
+ * Demo implementation of the trend/content client contract.
  *
  * Replace the two methods with `fetch` calls to a Python (FastAPI) backend when
  * one is available — the UI depends only on the contract in `./types`.
@@ -68,7 +68,7 @@ export const demoClient: NovaClient = {
         "Save this for later",
       ],
       hashtags: [
-        `#${brand.toLowerCase().replace(/[^a-z0-9]/g, "") || "nova"}`,
+        `#${brand.toLowerCase().replace(/[^a-z0-9]/g, "") || "trendova"}`,
         "#genz",
         "#smallbrandcheck",
         `#${brief.platform.toLowerCase().replace(/[^a-z0-9]/g, "")}`,

@@ -10,7 +10,7 @@ export function NovaMark({ className }: { className?: string }) {
       aria-hidden="true"
     >
       <img
-        src="/nova-logo.png"
+        src="/trendova-logo.png"
         alt=""
         className="size-full object-cover"
       />
@@ -29,8 +29,8 @@ export function NovaLogo({
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <NovaMark />
       {showWordmark ? (
-        <span className="text-[0.95rem] font-semibold tracking-[0.14em] text-foreground">
-          NOVA
+        <span className="text-[0.95rem] font-semibold tracking-[0.08em] text-foreground">
+          Trendōva AI
         </span>
       ) : null}
     </span>

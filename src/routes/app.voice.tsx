@@ -19,9 +19,9 @@ export const Route = createFileRoute("/app/voice")({
     meta: [
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { title: "Brand Voice — NOVA" },
-      { name: "description", content: "Define your brand personality, audience, tone and word choices so NOVA content stays on brand." },
-      { property: "og:title", content: "Brand Voice — NOVA" },
+      { title: "Brand Voice — Trendova AI" },
+      { name: "description", content: "Define your brand personality, audience, tone and word choices so Trendova AI content stays on brand." },
+      { property: "og:title", content: "Brand Voice — Trendova AI" },
       { property: "og:description", content: "Set personality, audience, tone and word rules for consistent brand content." },
     ],
   }),
@@ -75,7 +75,7 @@ function BrandVoice() {
 
   return (
     <PageShell>
-      <PageHeader eyebrow="Personalize" title="Brand Voice" description="Tell NOVA how your brand sounds so your captions stay consistent. Saved in this browser." action={<Button onClick={save} disabled={saving}>{saving ? <Loader2 className="size-4 animate-spin" /> : null} Save Brand Voice</Button>} />
+      <PageHeader eyebrow="Personalize" title="Brand Voice" description="Tell Trendōva AI how your brand sounds so your captions stay consistent. Saved in this browser." action={<Button onClick={save} disabled={saving}>{saving ? <Loader2 className="size-4 animate-spin" /> : null} Save Brand Voice</Button>} />
 
       <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
         <div className="space-y-6">

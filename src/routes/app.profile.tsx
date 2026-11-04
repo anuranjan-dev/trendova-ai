@@ -14,10 +14,10 @@ import { initials, useWorkspace } from "@/lib/nova/workspace-store";
 export const Route = createFileRoute("/app/profile")({
   head: () => ({
     meta: [
-      { title: "Your profile — NOVA" },
+      { title: "Your profile — Trendova AI" },
       { name: "description", content: "Edit your name, switch between light and dark mode, and check your Brand Voice." },
-      { property: "og:title", content: "Your profile — NOVA" },
-      { property: "og:description", content: "Your NOVA profile and appearance." },
+      { property: "og:title", content: "Your profile — Trendova AI" },
+      { property: "og:description", content: "Your Trendova AI profile and appearance." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -50,7 +50,7 @@ function Profile() {
   return (
     <PageShell>
       <div className="mx-auto max-w-2xl">
-        <PageHeader title="Your profile" description="The essentials for your NOVA workspace." />
+        <PageHeader title="Your profile" description="The essentials for your Trendōva AI workspace." />
         <Panel className="space-y-5">
           <div className="flex items-center gap-4">
             <span className="flex size-14 items-center justify-center rounded-full bg-primary text-lg font-semibold text-primary-foreground">{initials(name)}</span>
