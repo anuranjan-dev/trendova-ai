@@ -16,3 +16,11 @@
 
 # Dark Trendōva homepage
 - [x] Rebuild the homepage from the supplied dark design, keeping feature cards free of tick lists.
+
+# Updated Stitch homepage
+- [x] Apply the latest uploaded homepage design and its sample interactions.
+- [x] Verify desktop, tablet, mobile, and existing login/workspace navigation.
+
+# Supplied Trendōva login screen
+- [x] Apply the uploaded dark login design while retaining branding and demo sign-in behavior.
+- [x] Verify form validation, password visibility, Google feedback, navigation, and desktop/mobile layout.

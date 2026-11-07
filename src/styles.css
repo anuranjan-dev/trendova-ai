@@ -732,6 +732,46 @@ html.nova-ws.dark,
   color: var(--foreground);
 }
 
+/* Supplied login screen: isolated monochrome presentation, not an auth provider. */
+.trendova-login {
+  color-scheme: dark;
+  --background: #000000;
+  --foreground: #f4f4f5;
+  --card: #09090b;
+  --card-foreground: var(--foreground);
+  --secondary: #111114;
+  --secondary-foreground: var(--foreground);
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --accent: #18181b;
+  --accent-foreground: var(--foreground);
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --input: #52525b;
+  --ring: #ffffff;
+  --destructive: #ffb4ab;
+  --login-grid: radial-gradient(circle, #ffffff0d 1px, transparent 1px);
+  --login-shadow: 0 24px 60px -20px #000000cc;
+  --login-focus: 0 0 0 1px #ffffff4d, 0 0 20px -3px #ffffff1f;
+  background-image: var(--login-grid);
+  background-size: 32px 32px;
+  font-family: "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+.trendova-login, .trendova-login * { letter-spacing: 0; }
+.trendova-login .font-mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+.trendova-login .login-card { box-shadow: var(--login-shadow); animation: nova-rise 700ms ease-out both; transition: border-color 250ms ease; }
+.trendova-login .login-card:hover { border-color: var(--border-strong); }
+.trendova-login .login-enter { animation: nova-rise 700ms 150ms ease-out both; }
+.trendova-login .login-input { transition: border-color 250ms ease, box-shadow 250ms ease; }
+.trendova-login .login-input:focus-visible { border-color: var(--ring); box-shadow: var(--login-focus); }
+.trendova-login .login-emblem { transition: transform 250ms ease, border-color 250ms ease; }
+.trendova-login .login-emblem:hover { transform: translateY(-2px) scale(1.05); border-color: var(--border-strong); }
+@media (prefers-reduced-motion: reduce) {
+  .trendova-login *, .trendova-login *::before, .trendova-login *::after { animation: none !important; transition: none !important; }
+}
+
 /* Trendōva dark homepage ("Obsidian Atelier") — scoped greyscale tones */
 @theme inline {
   --color-tone-fg: var(--tone-fg);
@@ -747,8 +787,25 @@ html.nova-ws.dark,
   --color-tone-800: var(--tone-800);
   --color-tone-900: var(--tone-900);
   --color-tone-950: var(--tone-950);
+  --color-tone-canvas: var(--tone-canvas);
+  --color-tone-text: var(--tone-text);
+  --color-tone-card: var(--tone-card);
+  --color-tone-raised: var(--tone-raised);
 }
 .trendova-home {
+  --tone-canvas: #050505;
+  --tone-text: #ededed;
+  --tone-card: #0d0d0e;
+  --tone-raised: #0e0e10;
+  --success: #34d399;
+  --primary: var(--tone-fg);
+  --primary-foreground: var(--tone-bg);
+  --accent: var(--tone-800);
+  --accent-foreground: var(--tone-fg);
+  --ring: var(--tone-fg);
+  --homepage-lift-shadow: 0 16px 36px -12px #000000d9, 0 0 25px #ffffff14;
+  --homepage-sheen: linear-gradient(90deg, transparent, #ffffff59, transparent);
+  --homepage-text-gradient: linear-gradient(110deg, var(--tone-fg), var(--tone-200), var(--tone-400), var(--tone-fg));
   --tone-fg: #ffffff;
   --tone-bg: #000000;
   --tone-deep: #0a0a0a;
@@ -780,9 +837,9 @@ html.nova-ws.dark,
 }
 .trendova-home .shimmer-card { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
 .trendova-home .shimmer-card:hover {
-  border-color: color-mix(in oklab, var(--tone-fg) 28%, transparent);
-  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.8), 0 0 20px 0 color-mix(in oklab, var(--tone-fg) 4%, transparent);
-  transform: translateY(-2px);
+  border-color: var(--tone-500);
+  box-shadow: var(--homepage-lift-shadow);
+  transform: translateY(-6px);
 }
 .trendova-home section, .trendova-home #workspace { scroll-margin-top: 96px; }
 .trendova-home .workspace-panel { animation: trendova-rise 250ms ease-out; }
@@ -792,3 +849,44 @@ html.nova-ws.dark,
   .trendova-home .workspace-panel, .trendova-home .shimmer-card { animation: none; transition: none; }
 }
 .trendova-home .tab-btn { flex-shrink: 0; white-space: nowrap; }
+.trendova-home, .trendova-home * { letter-spacing: 0; }
+.trendova-home .animated-gradient-text {
+  background-image: var(--homepage-text-gradient);
+  background-size: 200% auto;
+  animation: nova-gradient-move 6s ease-in-out infinite;
+}
+.trendova-home .btn-shimmer { position: relative; overflow: hidden; }
+.trendova-home .btn-shimmer::after {
+  content: ""; position: absolute; top: -50%; left: -60%; width: 50%; height: 200%;
+  background: var(--homepage-sheen); transform: rotate(25deg); transition: left 750ms ease;
+}
+.trendova-home .btn-shimmer:hover::after { left: 130%; }
+.trendova-home.motion-ready :is(.scroll-reveal, .scroll-reveal-scale) {
+  opacity: 0; transform: translateY(32px); transition: opacity 750ms ease, transform 750ms ease;
+}
+.trendova-home.motion-ready .is-visible { opacity: 1; transform: none; }
+.trendova-home .chart-path { stroke-dasharray: 200; animation: trendova-chart-draw 2.2s ease-out both; }
+@keyframes trendova-chart-draw { from { stroke-dashoffset: 200; } to { stroke-dashoffset: 0; } }
+.trendova-home .calendar-day-cell span { color: inherit; }
+.trendova-home #workspace > div:first-child > div:first-child > div:last-child > div { flex-wrap: wrap; }
+.trendova-home #workspace .flex.items-center.justify-between { gap: 8px; flex-wrap: wrap; }
+.trendova-home #workspace .flex.items-baseline { flex-wrap: wrap; }
+.trendova-home #workspace .flex.gap-2 { flex-wrap: wrap; }
+.trendova-home .calendar-day-cell { height: auto; min-height: 76px; padding-inline: 4px; }
+.trendova-home .calendar-day-cell span { margin-top: 2px; }
+@media (width >= 48rem) and (width < 64rem) {
+  .trendova-home #how-it-works .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trendova-home #pricing .grid > div { padding: 20px; }
+}
+@media (width < 40rem) {
+  .trendova-home #workspace { padding: 12px; }
+  .trendova-home #workspace > div:first-child > div:last-child { flex-wrap: wrap; border-radius: 16px; }
+  .trendova-home #calendar-days { gap: 4px; }
+  .trendova-home #calendar-days .calendar-day-cell { font-size: 10px; min-width: 0; }
+  .trendova-home #workspace .workspace-panel > div { min-width: 0; }
+  .trendova-home #workspace .workspace-panel .p-5 { padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trendova-home *, .trendova-home *::before, .trendova-home *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .trendova-home.motion-ready :is(.scroll-reveal, .scroll-reveal-scale) { opacity: 1; transform: none; }
+}
