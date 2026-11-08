@@ -890,3 +890,64 @@ html.nova-ws.dark,
   .trendova-home *, .trendova-home *::before, .trendova-home *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .trendova-home.motion-ready :is(.scroll-reveal, .scroll-reveal-scale) { opacity: 1; transform: none; }
 }
+
+/* ---------------------------------------------------------------
+   Unified monochrome theme: every page (workspace, sign-up, reset,
+   errors) follows the homepage/login black-and-white identity.
+   Declared last so it overrides the older purple/blue palettes.
+---------------------------------------------------------------- */
+:root, .dark, .light,
+html.nova-ws.light, .light .nova-ws, html.nova-ws.dark, .dark .nova-ws, .nova-ws,
+.nova-auth {
+  color-scheme: dark;
+  --background: #000000;
+  --foreground: #f4f4f5;
+  --surface: #09090b;
+  --surface-2: #141417;
+  --card: #09090b;
+  --card-foreground: #f4f4f5;
+  --popover: #0c0c0e;
+  --popover-foreground: #f4f4f5;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --primary-soft: #ffffff14;
+  --secondary: #111114;
+  --secondary-foreground: #f4f4f5;
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  --accent: #18181b;
+  --accent-foreground: #f4f4f5;
+  --destructive: #f87171;
+  --destructive-foreground: #000000;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --input: #3f3f46;
+  --ring: #ffffff66;
+  --chart-1: #ffffff;
+  --chart-2: #d4d4d8;
+  --chart-3: #a1a1aa;
+  --chart-4: #71717a;
+  --chart-5: #52525b;
+  --sidebar: #050505;
+  --sidebar-foreground: #e4e4e7;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #18181b;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #27272a;
+  --sidebar-ring: #ffffff66;
+  --success: #d4d4d8;
+  --warning: #e4e4e7;
+  --navy: #000000;
+  --anomaly-color: 255 255 255;
+  --gradient-hero: none;
+  --gradient-mark: linear-gradient(140deg, #ffffff, #a1a1aa);
+  --gradient-surface: linear-gradient(180deg, #ffffff08 0%, #ffffff00 100%);
+}
+body, .nova-ws, .nova-auth { font-family: "Geist", ui-sans-serif, system-ui, sans-serif; }
+.nova-ws .font-mono, .nova-auth .font-mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+.hero-glow, .nova-auth, .nova-ws {
+  background-color: #000000;
+  background-image: radial-gradient(circle, #ffffff0a 1px, transparent 1px);
+  background-size: 32px 32px;
+}

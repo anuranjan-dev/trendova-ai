@@ -1921,15 +1921,15 @@ export function TrendovaHomepage() {
               </div>
               <Link
                 to="/signup"
-                className="w-full py-3 rounded-full border border-tone-700 bg-tone-900 text-tone-200 font-medium text-xs hover:bg-tone-800 hover:text-tone-fg transition-all active:scale-[0.98] shadow-sm"
+                className="block w-full py-3.5 rounded-full border border-tone-700 bg-tone-900 text-tone-200 font-medium text-xs text-center hover:bg-tone-800 hover:text-tone-fg transition-all active:scale-[0.98] shadow-sm"
               >
-                {"\n  Get Started Free\n"}
+                {"Get Started Free"}
               </Link>
             </div>
 
             <div className="scroll-reveal delay-200 shimmer-card rounded-3xl border border-tone-fg/40 bg-tone-950 p-8 flex flex-col justify-between shadow-2xl relative -translate-y-2 ring-1 ring-tone-fg/20">
               <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 bg-tone-fg text-tone-bg rounded-full text-[11px] font-bold uppercase shadow-md">
-                {"\n  POPULAR\n"}
+                {"POPULAR"}
               </div>
               <div>
                 <div className="mb-5">
@@ -1997,9 +1997,9 @@ export function TrendovaHomepage() {
               </div>
               <Link
                 to="/signup"
-                className="btn-shimmer w-full py-3 rounded-full bg-tone-fg hover:bg-tone-200 text-tone-bg font-semibold text-xs shadow-lg transition-all active:scale-[0.98]"
+                className="btn-shimmer block w-full py-3.5 rounded-full bg-tone-fg hover:bg-tone-200 text-tone-bg font-semibold text-xs text-center shadow-lg transition-all active:scale-[0.98]"
               >
-                {"\n  Choose Professional\n"}
+                {"Choose Professional"}
               </Link>
             </div>
 
@@ -2061,9 +2061,9 @@ export function TrendovaHomepage() {
               </div>
               <Link
                 to="/signup"
-                className="w-full py-3 rounded-full border border-tone-700 bg-tone-900 text-tone-200 font-medium text-xs hover:bg-tone-800 hover:text-tone-fg transition-all active:scale-[0.98] shadow-sm"
+                className="block w-full py-3.5 rounded-full border border-tone-700 bg-tone-900 text-tone-200 font-medium text-xs text-center hover:bg-tone-800 hover:text-tone-fg transition-all active:scale-[0.98] shadow-sm"
               >
-                {"\n  Choose Team\n"}
+                {"Choose Team"}
               </Link>
             </div>
           </div>

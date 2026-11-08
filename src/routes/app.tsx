@@ -1,4 +1,4 @@
-import { Outlet, createFileRoute } from "@tanstack/react-router";
+import { Link, Outlet, createFileRoute } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -41,7 +41,9 @@ function AppLayout() {
                 <AppSidebar onNavigate={() => setOpen(false)} />
               </SheetContent>
             </Sheet>
-            <NovaLogo />
+            <Link to="/" aria-label="Trendova AI home">
+              <NovaLogo />
+            </Link>
           </header>
 
           <main className="min-h-0 flex-1 overflow-hidden">
